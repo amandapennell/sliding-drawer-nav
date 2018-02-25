@@ -39,3 +39,18 @@ html {
 .slide-nav ul li:first-child {
   border-top: none;
 }
+
+.slide-nav ul li > a{
+  font-family: 'Source Serif Pro', Georgia, serif;
+  text-shadow: 1px 1px 1px #e9dbbd;
+  font size: 3.1rem;
+  display: block;
+  position: relative;
+  line-height: 1.5;
+  outline: none;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-webkit-transition: color 0.2s ease-in-out;
+  -ms-webkit-transition: color 0.2s ease-in-out;
+  -o-webkit-transition: color 0.2s ease-in-out;
+  webkit-transition: color 0.2s ease-in-out;
+}
