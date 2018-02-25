@@ -2,18 +2,18 @@
 
 .wrapper {
   width: 90%;
-  max-width: 50em;
+  max-width: 800px;
   margin: 30px auto;
 }
 
 .slide-nav {
   width: 100%;
-  min-width: 16.9em;
+  min-width: 270px;
   margin: 0 auto;
 }
 
 .slide-nav ul li {
-  min-height: 100px;
+  height: 100px;
   border-bottom: 1px solid #cbb682;
   border-top: 1px solid #e9dbbd;
   overflow: hidden;
@@ -26,14 +26,59 @@
 .slide-nav ul li > a{
   font-family: 'Source Serif Pro', Georgia, serif;
   text-shadow: 1px 1px 1px #e9dbbd;
-  font size: 3.1rem;
+  font-size: 50px;
+  font-weight: bold;
   display: block;
   position: relative;
-  line-height: 1.5;
+  line-height: 100px;
   outline: none;
   -webkit-transition: color 0.2s ease-in-out;
-  -moz-webkit-transition: color 0.2s ease-in-out;
-  -ms-webkit-transition: color 0.2s ease-in-out;
-  -o-webkit-transition: color 0.2s ease-in-out;
-  webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
+
+.slide-nav ul li > a span {
+  background: transparent url(../images/arrow.png) no-repeat center center;
+  text-indent: -9000px;
+  width: 26px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  right: -26px;
+  margin-top: -7px;
+  opacity: 0;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.slide-nav ul li > a:hover {
+  color: purple;
+}
+.slide-nav ul li > a:hover span{
+  opacity: 1;
+  right: 10px;
+}
+
+.slide-nav ul li > .slide-open > a span {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+  right: 10px;
+  opacity: 1;
+}
+
+.slide-content {
+  padding: 5px 0px 30px 0px;
+}
+
+@media screen and {max-width: 320px) {
+  .slide-nav ul li > a {
+    font-size: 36px;
+  }
+}
+  
